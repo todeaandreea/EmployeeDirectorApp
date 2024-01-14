@@ -14,16 +14,12 @@ const EmailForm = ({ onClose, onSendEmail, resetSelectedPersons }) => {
     const [message, setMessage] = useState('');
 
     const handleSendEmail = () => {
-        // Verifică dacă subject și message nu sunt goale înainte de a trimite emailul
         if (subject.trim() === '' || message.trim() === '') {
             alert('Subject și Message sunt obligatorii.');
             return;
         }
-
-        // Trimite emailul
         onSendEmail(subject, message);
         resetSelectedPersons();
-        // Închide dialogul
         onClose();
     };
 

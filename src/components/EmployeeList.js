@@ -24,7 +24,6 @@ const EmployeeList = () => {
     const [isInfoDialogOpen, setIsInfoDialogOpen] = useState(false);
     const [isEmailFormOpen, setIsEmailFormOpen] = useState(false);
     const [newEmployeeData, setNewEmployeeData] = useState({
-
         name: '',
         managerID: '',
         email: '',
@@ -69,7 +68,6 @@ const EmployeeList = () => {
     const handleAddDialogClose = () => {
         setIsAddDialogOpen(false);
         setNewEmployeeData({
-
             name: '',
             managerID: '',
             email: '',
@@ -98,7 +96,6 @@ const EmployeeList = () => {
             const response = await ApiService.getEmployee(employee.id);
             setSelectedEmployee(employee);
             setIsInfoDialogOpen(true);
-            // You can use response.data to display additional employee details
         } catch (error) {
             console.error('Error fetching employee details:', error);
         }
@@ -121,25 +118,20 @@ const EmployeeList = () => {
 
     const handleSendEmailClick = () => {
         if (selectedPersons.length > 0) {
-            // Deschide formularul EmailForm cu angajații selectați
-            // Pasează prop-ul onClose pentru a gestiona închiderea formularului
             setIsEmailFormOpen(true);
         } else {
             console.warn('No persons selected for email');
         }
     };
     const handleSendEmail = (subject, message) => {
-        // Implementează aici logica pentru a trimite e-mailurile
-        // Folosește subiectul și mesajul așa cum este necesar
         console.log('Subject:', subject);
         console.log('Message:', message);
-        // Aici poți adăuga logica pentru a trimite efectiv e-mailul
-        // Poți utiliza o librărie pentru gestionarea trimiterii de e-mailuri sau o altă metodă corespunzătoare
     };
 
     const resetSelectedPersons = () => {
         setSelectedPersons([]);
     };
+
     return (
         <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -161,8 +153,6 @@ const EmployeeList = () => {
                     resetSelectedPersons={resetSelectedPersons}
                 />
             )}
-
-
             {employees.map((employee) => (
                 <Grid item xs={12} sm={6} md={4} lg={3} key={employee.id}>
                     <Card>
@@ -239,14 +229,11 @@ const EmployeeList = () => {
                     <Typography>ID: {selectedEmployee?.id}</Typography>
                     <Typography>Manager ID: {selectedEmployee?.managerID}</Typography>
                     <Typography>Email: {selectedEmployee?.email}</Typography>
-                    {/* Add more details about the employee here */}
                 </DialogContent>
                 <DialogActions>
                     <Button style={{ color: '#100101' }} onClick={handleInfoDialogClose}>Close</Button>
                 </DialogActions>
             </Dialog>
-
-
         </Grid>
     );
 };

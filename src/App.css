@@ -12,7 +12,7 @@ body {
 }
 .button-container {
   display: flex;
-  gap: 10px; /* Adaugă un spațiu între butoane */
+  gap: 10px;
   justify-content: center;
 }
 
@@ -29,14 +29,14 @@ body {
 .main-container {
   max-width: 800px;
   width: 100%;
-  padding: 30px; /* Increased padding for more space around the content */
+  padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 
 header {
   text-align: center;
-  margin-bottom: 30px; /* Increased margin for more space between header and content */
+  margin-bottom: 30px;
 }
 
 nav {
@@ -52,18 +52,18 @@ ul {
 }
 
 li {
-  margin-right: 20px; /* Increased margin between list items */
+  margin-right: 20px;
 }
 
 button {
   cursor: pointer;
-  padding: 10px 20px; /* Increased padding for larger buttons */
-  font-size: 16px; /* Increased font size for buttons */
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #d76c6c;
   color: #fff;
   border: none;
   margin-bottom: 10px;
-  border-radius: 10px; /* Increased border-radius for rounded corners */
+  border-radius: 10px;
 }
 
 button:hover {
@@ -71,7 +71,7 @@ button:hover {
 }
 
 .content {
-  padding: 30px; /* Increased padding for more space around the content */
+  padding: 30px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

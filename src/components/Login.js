@@ -18,7 +18,7 @@ const Login = ({ onLogin }) => {
     };
 
     return (
-        <div className="login-container"> {/* Add a class for styling */}
+        <div className="login-container">
             <h2>Login</h2>
             <form>
                 <label>

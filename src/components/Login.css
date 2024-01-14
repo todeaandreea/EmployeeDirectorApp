@@ -10,7 +10,7 @@
 }
 
 h2 {
-    font-size: 24px; /* Increase heading font size */
+    font-size: 24px;
     margin-bottom: 30px;
     color: #4b4848;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,14 +23,14 @@ form {
 }
 
 label {
-    font-size: 18px; /* Increase label font size */
+    font-size: 18px;
     margin-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 input {
-    padding: 5px; /* Increase input padding for more height */
-    font-size: 16px; /* Increase input font size */
+    padding: 5px;
+    font-size: 16px;
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 70px;
@@ -38,8 +38,8 @@ input {
 
 button {
     cursor: pointer;
-    padding: 12px 24px; /* Increase button padding for more height */
-    font-size: 18px; /* Increase button font size */
+    padding: 12px 24px;
+    font-size: 18px;
     background-color: #d76c6c;
     color: #fff;
     border: none;

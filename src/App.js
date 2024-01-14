@@ -5,18 +5,16 @@ import DepartmentList from './components/DepartmentList';
 import EmployeeList from './components/EmployeeList';
 import EmailForm from './components/EmailForm';
 import Login from './components/Login';
-import './App.css'; // Import the CSS file for styles
+import './App.css';
 
 const App = () => {
     const [loggedInUser, setLoggedInUser] = useState(null);
 
     const handleLogin = (username) => {
-        // You can perform authentication here, and set the logged-in user
         setLoggedInUser(username);
     };
 
     const handleLogout = () => {
-        // Perform logout logic, e.g., clear user from state
         setLoggedInUser(null);
     };
 
@@ -26,10 +24,8 @@ const App = () => {
                 <header>
                     <h1>Employee Track</h1>
                 </header>
-
                 <div className="main-container">
                     {loggedInUser ? (
-                        // Render the authenticated content
                         <>
                             <nav>
                                 <ul>
@@ -51,7 +47,6 @@ const App = () => {
                             </div>
                         </>
                     ) : (
-                        // Render the login component if not authenticated
                         <Login onLogin={handleLogin} />
                     )}
                 </div>

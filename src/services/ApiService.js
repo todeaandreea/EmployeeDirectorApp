@@ -15,6 +15,7 @@ const ApiService = {
     getEmployee: (employeeId) => axios.get(`http://localhost:8080/api/employee/${employeeId}`),
     sendEmailToSelected: (selectedEmployees, emailData) =>
         axios.post('http://localhost:8080/api/email/sendToSelected', { selectedEmployees, emailData }),
+
     getAllManagersByDepartment: async (departmentID) => {
         try {
             const response = await axios.get(`http://localhost:8080/api/employee/managersByDepartment?departmentID=${departmentID}`);
