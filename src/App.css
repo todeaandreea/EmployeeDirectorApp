@@ -1,0 +1,78 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b4848;
+}
+/* src/App.css */
+.home-container {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b4848;
+}
+.button-container {
+  display: flex;
+  gap: 10px; /* Adaugă un spațiu între butoane */
+  justify-content: center;
+}
+
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.main-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px; /* Increased padding for more space around the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin for more space between header and content */
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-right: 20px; /* Increased margin between list items */
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px; /* Increased padding for larger buttons */
+  font-size: 16px; /* Increased font size for buttons */
+  background-color: #d76c6c;
+  color: #fff;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px; /* Increased border-radius for rounded corners */
+}
+
+button:hover {
+  background-color: #d74f4f;
+}
+
+.content {
+  padding: 30px; /* Increased padding for more space around the content */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
